@@ -8,32 +8,10 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. Read number of unknowns n.
-   Read augmented matrix A[n][n+1].
-
-
-
-2.For i = 0 to n-1
-  If A[i][i] == 0, stop (division by zero).
-  For j = i+1 to n-1
-  Find ratio = A[j][i] / A[i][i]
-  For k = 0 to n
-  A[j][k] = A[j][k] - ratio * A[i][k] 
-
-
-
-3.Back Substitution
-  x[n-1] = A[n-1][n] / A[n-1][n-1]
-  For i = n-2 to 0
-   x[i] = A[i][n]
-   For j = i+1 to n-1
-   x[i] = x[i] - A[i][j] * x[j]
-    x[i] = x[i] / A[i][i] 
-
-
-
-4. Print the solution vector x[i].
-
+Step 1: Correct. You must first read the size of the system and the augmented matrix.
+Step 2: Correct. Forward elimination happens before back substitution.
+Step 3: Correct. Back substitution uses the upper-triangular matrix from step 2.
+Step 4: Correct. Printing the solution is the last step.
 ## Program:
 ```python
 /*
