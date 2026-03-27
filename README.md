@@ -9,8 +9,11 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 
 ## Algorithm
 Step 1: Correct. You must first read the size of the system and the augmented matrix.
+
 Step 2: Correct. Forward elimination happens before back substitution.
+
 Step 3: Correct. Back substitution uses the upper-triangular matrix from step 2.
+
 Step 4: Correct. Printing the solution is the last step.
 ## Program:
 ```python
