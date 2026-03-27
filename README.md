@@ -10,12 +10,18 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 ## Algorithm
 1. Read number of unknowns n.
    Read augmented matrix A[n][n+1].
+
+
+
 2.For i = 0 to n-1
   If A[i][i] == 0, stop (division by zero).
   For j = i+1 to n-1
   Find ratio = A[j][i] / A[i][i]
   For k = 0 to n
   A[j][k] = A[j][k] - ratio * A[i][k] 
+
+
+
 3.Back Substitution
   x[n-1] = A[n-1][n] / A[n-1][n-1]
   For i = n-2 to 0
@@ -23,6 +29,9 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
    For j = i+1 to n-1
    x[i] = x[i] - A[i][j] * x[j]
     x[i] = x[i] / A[i][i] 
+
+
+
 4. Print the solution vector x[i].
 
 ## Program:
